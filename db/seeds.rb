@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+LeagueSession.create(date: Date.parse("01/17/2021"), gameone: 154, gametwo: 219, gamethree: 189, notes: "Nice second game")

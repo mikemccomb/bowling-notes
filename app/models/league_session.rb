@@ -1,0 +1,2 @@
+class LeagueSession < ApplicationRecord
+end
