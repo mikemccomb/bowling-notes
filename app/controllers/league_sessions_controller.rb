@@ -33,4 +33,10 @@ class LeagueSessionsController < ApplicationController
     )
     render :show
   end
+
+  def destroy
+    @league_session = LeagueSession.find_by(id: params[:id])
+    @league_session.destroy
+    render json: { message: "League session destroyed successfully" }
+  end
 end

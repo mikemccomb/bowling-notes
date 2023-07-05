@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   post "/league_sessions" => "league_sessions#create"
   get "/league_sessions/:id" => "league_sessions#show"
   patch "/league_sessions/:id" => "league_sessions#update"
+  delete "/league_sessions/:id" => "league_sessions#destroy"
 end

@@ -32,4 +32,11 @@ class LeagueSessionsControllerTest < ActionDispatch::IntegrationTest
     data = JSON.parse(response.body)
     assert_equal "Updated text", data["notes"]
   end
+
+  test "destroy" do
+    assert_difference "LeagueSession.count", -1 do
+      delete "/league_sessions/#{LeagueSession.first.id}.json"
+      assert_response 200
+    end
+  end
 end
