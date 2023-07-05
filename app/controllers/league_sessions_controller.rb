@@ -13,7 +13,11 @@ class LeagueSessionsController < ApplicationController
       series: params[:series],
       notes: params[:notes] || "",
     )
-    @league_session[:series] = @league_session[:gameone]
+    render :show
+  end
+
+  def show
+    @league_session = LeagueSession.find_by(id: params[:id])
     render :show
   end
 end

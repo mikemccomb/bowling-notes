@@ -6,4 +6,5 @@ json.date league_session.date
 json.gameone league_session.gameone
 json.gametwo league_session.gametwo
 json.gamethree league_session.gamethree
+json.series league_session.series
 json.notes league_session.notes

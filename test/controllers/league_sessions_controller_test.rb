@@ -15,4 +15,12 @@ class LeagueSessionsControllerTest < ActionDispatch::IntegrationTest
       assert_response 200
     end
   end
+
+  test "show" do
+    get "/league_sessions/#{LeagueSession.first.id}.json"
+    assert_response 200
+
+    data = JSON.parse(response.body)
+    assert_equal ["id", "date", "gameone", "gametwo", "gamethree", "series", "notes"], data.keys
+  end
 end
