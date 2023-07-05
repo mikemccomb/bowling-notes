@@ -2,10 +2,10 @@
 
 one:
   date: 2023-07-04
-  gameone: 1
-  gametwo: 1
-  gamethree: 1
-  series: 1
+  gameone: 100
+  gametwo: 200
+  gamethree: 300
+  series: 600
   notes: MyText
 
 two:
@@ -13,5 +13,5 @@ two:
   gameone: 1
   gametwo: 1
   gamethree: 1
-  series: 1
+  series: 3
   notes: MyText
