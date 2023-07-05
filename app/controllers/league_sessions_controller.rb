@@ -20,4 +20,17 @@ class LeagueSessionsController < ApplicationController
     @league_session = LeagueSession.find_by(id: params[:id])
     render :show
   end
+
+  def update
+    @league_session = LeagueSession.find_by(id: params[:id])
+    @league_session.update(
+      date: params[:date] || @league_session.date,
+      gameone: params[:gameone] || @league_session.gameone,
+      gametwo: params[:gametwo] || @league_session.gametwo,
+      gamethree: params[:gamethree] || @league_session.gamethree,
+      series: params[:series] || @league_session.series,
+      notes: params[:notes] || @league_session.notes,
+    )
+    render :show
+  end
 end
