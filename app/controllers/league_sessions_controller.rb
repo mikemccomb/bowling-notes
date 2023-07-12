@@ -10,7 +10,7 @@ class LeagueSessionsController < ApplicationController
       gameone: params[:gameone] || 0,
       gametwo: params[:gametwo] || 0,
       gamethree: params[:gamethree] || 0,
-      series: params[:series],
+      series: params[:series] || 0,
       notes: params[:notes] || "",
     )
     render :show
