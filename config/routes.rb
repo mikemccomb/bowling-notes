@@ -6,8 +6,10 @@ Rails.application.routes.draw do
   # get "/league_sessions/:id" => "league_sessions#show"
   # patch "/league_sessions/:id" => "league_sessions#update"
   # delete "/league_sessions/:id" => "league_sessions#destroy"
-  get "/seasons" => "seasons#index"
-  post "/seasons" => "seasons#create"
-  get "/seasons/:id" => "seasons#show"
-  patch "/seasons/:id" => "seasons#update"
+  resources :seasons
+  # get "/seasons" => "seasons#index"
+  # post "/seasons" => "seasons#create"
+  # get "/seasons/:id" => "seasons#show"
+  # patch "/seasons/:id" => "seasons#update"
+  # delete "/seasons/:id" => "seasons#destroy"
 end

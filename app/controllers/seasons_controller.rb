@@ -29,4 +29,10 @@ class SeasonsController < ApplicationController
     )
     render :show
   end
+
+  def destroy
+    @season = Season.find_by(id: params[:id])
+    @season.destroy
+    render json: { message: "Season destroyed successfully" }
+  end
 end
