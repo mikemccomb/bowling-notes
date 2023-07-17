@@ -11,7 +11,7 @@ class LeagueSessionsControllerTest < ActionDispatch::IntegrationTest
 
   test "create" do
     assert_difference "LeagueSession.count", 1 do
-      post "/league_sessions.json"
+      post "/league_sessions.json", params: { season_id: Season.first.id, date: "2023-07-04", gameone: 100, gametwo: 200, gamethree: 300, series: 600, notes: "MyText" }
       assert_response 200
     end
   end

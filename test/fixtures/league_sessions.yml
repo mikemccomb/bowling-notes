@@ -7,6 +7,7 @@ one:
   gamethree: 300
   series: 600
   notes: MyText
+  season: one
 
 two:
   date: 2023-07-04
@@ -15,3 +16,4 @@ two:
   gamethree: 1
   series: 3
   notes: MyText
+  season: one

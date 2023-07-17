@@ -12,6 +12,7 @@ class LeagueSessionsController < ApplicationController
       gamethree: params[:gamethree] || 0,
       series: params[:series] || 0,
       notes: params[:notes] || "",
+      season_id: params[:season_id],
     )
     render :show
   end
