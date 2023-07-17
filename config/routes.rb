@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   # patch "/league_sessions/:id" => "league_sessions#update"
   # delete "/league_sessions/:id" => "league_sessions#destroy"
   get "/seasons" => "seasons#index"
+  post "/seasons" => "seasons#create"
 end
