@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   # get "/league_sessions/:id" => "league_sessions#show"
   # patch "/league_sessions/:id" => "league_sessions#update"
   # delete "/league_sessions/:id" => "league_sessions#destroy"
+  get "/seasons" => "seasons#index"
 end
