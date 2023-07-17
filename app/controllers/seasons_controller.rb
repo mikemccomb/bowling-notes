@@ -13,4 +13,9 @@ class SeasonsController < ApplicationController
     )
     render :show
   end
+
+  def show
+    @season = Season.find_by(id: params[:id])
+    render :show
+  end
 end

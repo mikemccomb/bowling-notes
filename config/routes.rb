@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   # delete "/league_sessions/:id" => "league_sessions#destroy"
   get "/seasons" => "seasons#index"
   post "/seasons" => "seasons#create"
+  get "/seasons/:id" => "seasons#show"
 end
