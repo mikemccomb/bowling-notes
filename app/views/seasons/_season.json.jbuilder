@@ -6,3 +6,4 @@ json.name season.name
 json.start_date season.start_date
 json.end_date season.end_date
 json.number_sessions season.number_sessions
+json.league_sessions season.league_sessions
