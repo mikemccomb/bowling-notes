@@ -21,7 +21,7 @@ class SeasonsControllerTest < ActionDispatch::IntegrationTest
     assert_response 200
 
     data = JSON.parse(response.body)
-    assert_equal ["id", "name", "start_date", "end_date", "number_sessions"], data.keys
+    assert_equal ["id", "name", "start_date", "end_date", "number_sessions", "league_sessions"], data.keys
   end
 
   test "update" do
