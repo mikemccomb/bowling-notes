@@ -11,7 +11,7 @@ class SeasonsControllerTest < ActionDispatch::IntegrationTest
 
   test "create" do
     assert_difference "Season.count", 1 do
-      post "/seasons.json"
+      post "/seasons.json", params: { name: "Test Name", start_date: "2001-01-01", end_date: "2001-12-31", number_sessions: 52 }
       assert_response 200
     end
   end
