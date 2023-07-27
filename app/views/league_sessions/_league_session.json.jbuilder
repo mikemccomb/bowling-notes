@@ -8,3 +8,4 @@ json.gametwo league_session.gametwo
 json.gamethree league_session.gamethree
 json.series league_session.series
 json.notes league_session.notes
+json.created_at league_session.created_at
